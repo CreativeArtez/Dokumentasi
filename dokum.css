@@ -151,6 +151,11 @@ button{
      .wrapp{
           width: 100%;
      }
+     .teks{
+          position: relative;
+        transform: translateX(-20px);
+
+     }
      .title{
           text-align: center;
           font-size: 1.2em;
