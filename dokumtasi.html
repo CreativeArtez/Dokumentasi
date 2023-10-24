@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>POLTAR DOKUMENTASI</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+	   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+     <link rel="stylesheet" href="./dokum.css">
+</head>
+<body>
+    <a href=""></a>
+     <div class="noise"></div>
+     <!---->
+     <a href="" class="back">
+      <i class="fa-solid fa-reply-all"></i>
+     </a>
+   
+     <div class="wrapp">
+           <div class="teks">
+                <h1 class="title">DOKUMENTASI <br><span class="pltr">POLTAR</span></h1>
+                <p>web ini adalah laman untuk menyertakan foto dokumentasi yang dapat diakses secara online oleh semua orang ! lihat keseruan kita</p>
+                <p class="p">*klik gambar untuk lihat</p>
+                <div id="tanggal-waktu">
+                  <p id="tanggal"></p>
+                  <p id="bulan-tahun"></p>
+                  <p id="hari"></p>
+                </div>
+             
+
+            </div>
+          <ul class="gallery">
+               <a class="galeri-item" data-fancybox="gallery" href="https://cdni.fancaps.net/file/fancaps-animeimages/13777197.jpg">
+                    
+                  <img src="./img/gojo.jpg" alt="1" class="galeri-img">
+                    <span class="zoom">ZOOM</span>
+               </a>
+               <a class="galeri-item" data-fancybox="gallery" href="./img/gojo.jpg">
+                    <img src="./img/gojo.jpg" alt="2" class="galeri-img">
+                    <span class="zoom">ZOOM</span>
+               </a>
+               <a class="galeri-item" data-fancybox="gallery" href="./img/gojo.jpg">
+                    <img src="./img/gojo.jpg" alt="3" class="galeri-img" >
+                    <span class="zoom">ZOOM</span>
+               </a>
+               <a class="galeri-item" data-fancybox="gallery" href="./img/gojo.jpg">
+                    <img src="./img/gojo.jpg" alt="4" class="galeri-img">
+                    <span class="zoom">ZOOM</span>
+               </a>
+               <a class="galeri-item" data-fancybox="gallery" href="./img/gojo.jpg">
+                    <img src="./img/gojo.jpg" alt="5" class="galeri-img">
+                    <span class="zoom">ZOOM</span>
+               </a>
+               <a class="galeri-item" data-fancybox="gallery" href="./img/gojo.jpg">
+                    <img src="./img/gojo.jpg" alt="6" class="galeri-img">
+                    <span class="zoom">ZOOM</span>
+               </a>
+          </ul>
+     </div>
+   
+     
+      <!---->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="./splitting.min.js"></script>
+<script>
+  //untuk anu
+import { Fancybox } from '@fancyapps/ui/dist/fancybox/fancybox.esm.js';
+import '@fancyapps/ui/dist/fancybox/fancybox.css';
+
+import './dokum.css';
+
+Fancybox.bind('[data-fancybox="gallery"]', {
+  compact: false,
+  idle: false,
+
+  animated: false,
+  showClass: false,
+  hideClass: false,
+
+  dragToClose: false,
+
+  Images: {
+    // Disable animation from/to thumbnail on start/close
+    zoom: false,
+  },
+
+  Toolbar: {
+    display: {
+      left: [],
+      middle: [],
+      right: ['close'],
+    },
+  },
+
+  Thumbs: {
+    type: 'classic',
+    Carousel: {
+      center: function () {
+        return this.contentDim > this.viewportDim;
+      },
+    },
+  },
+
+  Carousel: {
+    // Remove the navigation arrows
+    Navigation: false,
+  },
+});
+</script>
+<script>
+ 
+//untuk tanggal
+function tampilkanTanggalWaktu() {
+    const date = new Date();
+    const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    };
+
+    const formattedDate = date.toLocaleDateString('id-ID', options);
+
+    document.getElementById('tanggal-waktu').textContent = formattedDate;
+}
+
+tampilkanTanggalWaktu();
+setInterval(tampilkanTanggalWaktu, 1000);
+
+</script>
+</html>
