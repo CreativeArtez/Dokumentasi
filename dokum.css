@@ -21,7 +21,7 @@ button{
 .noise{
      top: 0;
      left: 0;
-     background: url(./noise.gif);
+     background: url(noise.gif);
      opacity: 0.08;
      position: fixed;
      z-index: -1;
