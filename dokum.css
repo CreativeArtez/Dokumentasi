@@ -15,13 +15,72 @@ body{
      display: none;
 }
 /* start has begin */
+
+/*untuk startup popup*/
+.popup{
+     z-index: 10;
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     .overlay{
+          z-index: -1;
+          width: 100%;
+          height: 100%;
+          position: fixed;
+          display: flex;
+          gap: 0;
+         
+          .bar{
+               margin: 0;
+               padding: 0;
+               clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+               width: 10%;
+               height: 100%;
+               border: 1px solid rgb(113, 113, 113);;
+               background:  rgb(113, 113, 113);
+             
+          }
+     }
+     .popup-content {
+          font-size: 2.5em;
+          color: rgb(237, 237, 237);
+          padding: 20px;
+          text-align: center;
+      }
+      #closeBtn {
+          font-size: 0.5em;
+          background: transparent;
+          padding: 5px 20px;
+          color: rgb(237, 237, 237) ;
+          border: none;
+          border-bottom: 2px solid rgb(237, 237, 237);
+          cursor: pointer;
+      }
+
+      #closeBtn:hover {
+          background-color: black;
+      }
+}
+
+
+
+
+
+
 button{
      color: aliceblue;
 }
 .noise{
      top: 0;
      left: 0;
-     background: url(noise.gif);
+     background: url(./noise.gif);
      opacity: 0.08;
      position: fixed;
      z-index: -1;
@@ -158,6 +217,6 @@ button{
      }
      .title{
           text-align: center;
-          font-size: 1.2em;
+          font-size: 1.5em;
      }     
 }
