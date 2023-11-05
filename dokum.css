@@ -205,8 +205,11 @@ button{
      opacity: 1;
      transform: translate(-50%,-50%);
 }
+#tanggal-waktu{
+     color: azure;
+}
 /**/
-@media screen and (max-width:450px)  {
+@media screen and (max-width:700px)  {
      .cl{
           font-size: 0.6em;
      }
@@ -223,6 +226,6 @@ button{
      }
      .title{
           text-align: center;
-          font-size: 1.5em;
+          font-size: 1.2em;
      }     
 }
