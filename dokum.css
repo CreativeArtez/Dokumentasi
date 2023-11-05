@@ -132,7 +132,8 @@ button{
      bottom: 30px;
      position: absolute;
      font-size: 1.5em;
-     color: rgb(184, 184, 184);
+     color: whitesmoke;
+     
 }
 .teks .p{
      bottom: 0;
@@ -205,9 +206,7 @@ button{
      opacity: 1;
      transform: translate(-50%,-50%);
 }
-#tanggal-waktu{
-     color: azure;
-}
+
 /**/
 @media screen and (max-width:700px)  {
      .cl{
