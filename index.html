@@ -1,151 +1,978 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>POLTAR DOKUMENTASI</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
-     <link rel="stylesheet" href="./dokum.css">
+    <style>
+        
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.marq{
+    width: 100%;
+    height: auto;
+    background-color: #1f1f1f;
+    overflow: hidden;
+    display: flex;
+}
+marquee{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.bing{
+
+    margin: auto;
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 6em;
+    color: white;
+}
+.kotak{
+    background-color: rgb(66, 66, 66);
+    padding:0 10px;
+    color: gold;
+}
+.img-marq{
+    width: 15vh;
+    height: 15vh;
+}
+.preloader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 102;
+    background-color: #1f1f1f;
+    display: flex;
+}
+.counter-two{
+    font-family: 'Vina Sans', sans-serif;
+    margin: auto;
+    position: absolute;
+    font-size: 6em;
+    letter-spacing: 2px;
+    z-index: 200;
+    color: greenyellow;
+    bottom: 10px;
+    right: 10px;
+}
+.co{
+    font-family: 'syne',sans-serif;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+     display: flex;
+}
+.yuta{
+    margin: auto;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid black;
+}
+.gsap{
+    transform: scale(1,1.3);
+    font-weight: 600;
+    left: 17%;
+    bottom: 27%;
+    font-size: 3em;
+    color: black;
+    position: absolute;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.bg-color{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(82, 249, 127);
+}
+.kelas-desc{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.text-gsap{
+    width: max-content;
+    height: min-content;
+    margin: auto;
+    display: block;
+}  
+.animtext{
+    margin: auto;
+    text-align: center;
+}
+.text{
+    font-weight: 100;
+    margin: auto;
+    text-align: center;
+    font-size: 2.6em;
+    opacity: 1;
+    display: inline-block;
+    margin-left: 0.5em;
+}
+.smile{
+    position: relative;
+    transform: translateY(2px);
+    width: 0.78em;
+    height: 0.78em;
+}
+
+.kelas-def{
+   font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    border-bottom:1px solid rgb(25, 25, 25) ;
+}
+.text-reveal{
+    margin: auto;
+    width: 70%;
+    height: max-content;
+    font-size: 2em;
+}
+
+.line{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+.lines{
+    margin: auto;
+    width: 0.2em;
+    height: 100%;
+    background-color:rgb(25, 25, 25);
+}
+.wrapper {
+     font-family: 'Press Start 2P';
+     overflow-x: hidden;
+     position: relative;    
+ }
+ .container {
+     display: flex;
+     width: 300vw;
+     .col {
+         display: flex;
+         gap: 3em;
+     }
+     section {
+         height: 100vh;
+         width: 100vw;
+     }
+ }
+ .jurusan{
+     width: 100vw;
+     height: 100vh;
+    background-color: rgb(202, 202, 202);
+     display: flex;
+ }
+ .jur{
+     position: relative;
+     margin: auto;
+     width: 80%;
+     height: 80%;
+ }
+ .jur h1{
+     color: rgb(39, 39, 39);
+ }
+ .singkatan{
+     font-size: 5em;
+ }
+ .pariwisata{
+     font-size: 4em;
+ }
+ .busana{
+     font-size: 3.5em;
+ }
+ .non-s{
+     margin-left: 2%;
+     font-size: 0.7em;
+ }
+ .start{
+     background-color: rgb(38, 38, 38);
+ }
+ .isi{
+     font-size: 5em;
+     text-align: center;
+     width: auto;
+     height: auto;
+     margin: auto;
+     color: white;
+ }
+ .all{
+     position: absolute;
+     bottom: 0;
+     width: 100%;
+     height: 70%;
+     display: flex;
+ }
+ .bar1,.bar2{
+     display: flex;
+     width: 50%;
+     height: 100%;
+ }
+ .bar{
+     border: 1px solid rgb(78, 78, 78);
+     margin: auto;
+     width: 80%;
+     height: 80%;
+ }
+ .biodata{
+     background-color:  rgb(38, 38, 38);
+     margin: auto;
+     width: 80% ;
+     height: 80%;
+ }
+ .biodata h1{
+     font-size: 1em;
+     color: hsl(0, 0%, 100%);
+     margin: 10px 10px;
+     line-height: 30px;
+ }
+ .reveal-j{
+     display: inline-block;
+     overflow: hidden;
+     margin-bottom: 5px;
+ }
+ .span{
+     display: inline-block;
+     overflow: hidden;
+ }
+ .kesimpulan{
+    overflow: hidden;
+     width: 100%;
+     height: 100vh;
+     background-color: rgb(202, 202, 202);
+     display: flex;
+     position: relative;
+ }
+ .bg-bang{
+     width: 100%;
+     height: 100%;
+     background-color: rgb(36, 36, 36);
+     position: absolute;
+ }
+
+ .simle{
+     font-family: 'Caveat', cursive;
+     z-index: 1;
+     width: 70%;
+     height: 30%;
+     font-size: 2em;
+     color: rgb(79, 244, 109);
+     margin: auto;
+ }
+ .char{
+     display: inline-block;
+ }
+ .ulangi{
+    position: relative;
+    color: white;
+    font-family: 'Press Start 2P';
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+    display: flex;
+ }
+.textt{
+    margin: auto;
+    width: 50%;
+    height: 70%;
+}
+.textt h1{
+    width: 100%;
+    height: 50%;
+    font-size: 4em;
+}
+.mini{
+    font-size: 0.5em;
+}
+a{  
+    padding: 15px 15px;
+    background-color: white;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+}
+.cp{
+    font-size: 1em;
+    color: aliceblue;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+@media screen and (max-width:425px){
+    .gsap{
+        font-size: 1em;
+    }
+    .text{
+        font-size: 1.8em;
+    }
+    .teks{
+        display: flex;
+    }
+    .span{
+        font-size: 0.7em;
+    }
+    .text-reveal{
+        margin: auto;
+        width: 80%;
+        height: max-content;
+        font-size: 1.7em;
+    }
+    h2{ 
+        font-size: 3em;
+        color: white;
+        margin: 0;    
+    }
+    .counter{
+        font-size: 2em;
+    }
+    .isi{
+        font-size: 1.5em;
+    }
+    .jurusan{
+        width: 100vw;
+        height: 100vh;
+       background-color: rgb(202, 202, 202);
+        display: flex;
+    }
+    .jur{
+        object-fit: cover;
+        margin: auto;
+        width: 95%;
+        height: 95%;
+    }
+    .jur h1{
+        margin-left: 10%;
+        margin-top: 20%;
+        color: rgb(39, 39, 39);
+    }
+    .singkatan{
+        font-size: 1.5em;
+    }
+    .non-s{
+        font-size: 0.5em;
+    }
+    .start{
+        background-color: rgb(38, 38, 38);
+    }
+    
+    .all{
+        width: 100%;
+        height: 70%;
+        display: block;
+    }
+    .bar1,.bar2{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    
+    
+    .-j{
+        font-size: 3em;
+    }
+    .textt h1{
+        font-size: 2em;
+    }
+
+    .yuta{
+        width: 23vh;
+        height: 23vh;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 1px solid black;
+    }
+    .gsap{
+        transform: scale(1,1.6);
+        left: 9%;
+        bottom: 34%;
+        font-size: 1em;   
+    }
+    .text{
+        font-size: 1.5em;
+    }
+    .text-reveal{
+        width: 80%;
+        font-size: 1.4em;
+    }
+    
+    .all{
+        width: 100%;
+        height: 70%;
+        display: block;
+    }
+    .bar1,.bar2{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    
+    .biodata h1{
+        color: white;
+        margin: 10px 10px;
+        line-height: 13px;
+        font-size: 0.7em;
+    }
+    .textt{
+        width: 90%;
+        height: 40%;
+    }
+    .cp{
+        font-size: 0.7em;
+    }
+    .simle{
+        padding-top: 100px;
+        font-family: 'Caveat', cursive;
+        z-index: 1;
+        width: 80%;
+        height: 90%;
+        font-size: 1.5em;
+        color: rgb(79, 244, 109);
+        margin: auto;
+        font-weight: 100;
+    }
+}
+
+
+
+.char{
+     display: inline-block;
+}
+.title{
+     margin: 0;
+     font-size: 4rem;
+     text-align: center;
+     color: rgb(255, 255, 255);
+     text-transform: uppercase;
+     mix-blend-mode: difference;
+}
+
+    </style>
 </head>
 <body>
-     <!--unutk startup popup-->
-      <div class="popup">
-        <div class="overlay">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+
+    <div class="preloader">
+        <h1 class="counter-two">100</h1>
+    </div>
+    <div class="bg-color">
+        <div class="co">
+           <img class="yuta" src="./1000030216.jpg" alt="">
+           <div class="gsap">RIFQI ADLI HERNAWAN</div>
         </div>
-        <div class="noise"></div>
-        <div class="popup-content">
-          <h3 class="cl">DOKUMENTASI POLTAR</h3>
-          <button id="closeBtn" class="cl">MULAI</button>
-        </div>
-      </div>
-
-
-    <!--back-->
-
-     <div class="noise"></div>
-     <a href="https://polisitaruna.github.io/Poltar/" class="back">
-      <i class="fa-solid fa-reply-all"></i>
-     </a>
-
-
-     <!-- untuk documentation-->
-     <div class="wrapp">
-           <div class="teks">
-                <h1 class="title">DOKUMENTASI <br><span class="pltr">POLTAR</span></h1>
-                <br>
-                <p>web ini adalah laman untuk menyertakan foto dokumentasi yang dapat diakses secara online oleh semua orang ! ,<br> lihat keseruan kita</p>
-                <p class="p">*klik gambar untuk lihat</p>
-                <div id="tanggal-waktu">
-                  <p id="tanggal"></p>
-                  <p id="bulan-tahun"></p>
-                  <p id="hari"></p>
+        <div class="kelas-desc" id="ulangi">
+            <div class="text-gsap">
+                <div class="animtext">
+                    <span class="text">LETS STUDY</span>
                 </div>
-             
-
+                <div class="animtext teks">
+                    <span class="text">RELATIVE</span>
+                    <span class="text">PRONOUNCE</span>
+                </div>
+                <div class="animtext">
+                    <span class="text">WITH</span>
+                    <span class="text">ME</span>
+                    <span class="text"><img class="smile" src="./img/smile-svg-png-icon-download-29.png" alt="">NLY</span>
+                </div>
+                <div class="animtext">
+                    <span class="text">5 MINUTE.</span>
+                </div>
             </div>
-          <ul class="gallery">
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103140617.jpg">
-                  <img src="./img/IMG20231103140617.jpg" alt="1" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103140641.jpg">
-                    <img src="./img/IMG20231103140641.jpg" alt="2" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103140741.jpg">
-                    <img src="./img/IMG20231103140741.jpg" alt="3" class="galeri-img" >
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103140845.jpg">
-                    <img src="./img/IMG20231103140845.jpg" alt="4" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103141555.jpg">
-                    <img src="./img/IMG20231103141555.jpg" alt="5" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103143152.jpg"">
-                    <img src="./img/IMG20231103143152.jpg" alt="6" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103143446.jpg"">
-                    <img src="./img/IMG20231103143446.jpg" alt="7" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103141548.jpg">
-                    <img src="./img/IMG20231103141548.jpg" alt="8" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103143519.jpg">
-                    <img src="./img/IMG20231103143519.jpg" alt="9" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-               <a class="galeri-item" data-fancybox="gallery" href="./img/IMG20231103150420.jpg">
-                    <img src="./img/IMG20231103150420.jpg" alt="10" class="galeri-img">
-                    <span class="zoom">ZOOM</span>
-               </a>
-          </ul>
-     </div>
-   
-     
-      <!---->
+            
+        </div>
+        <div class="kelas-def">
+            <div class="text-reveal">
+                <p class="reveal-type" data-bg-color="#cccccc" data-fg-color="teal">
+                    RELATIVE PRONOUNCE
+                    <br>
+                    Kata ganti relatif adalah kata ganti yang digunakan untuk memperkenalkan klausa relatif.
+                    klausa yang memberikan informasi lebih lanjut tentang kata benda atau frasa kata. Kata 
+                    ganti relatif yang paling umum digunakan dalam bahasa Inggris adalah which, that, who, and whom.
+                </p>
+               </div>
+        </div>
+        <div class="marq">
+            <marquee behavior="scroll" scrollamount="20" scrolldelay="10">
+                <div class="bing">INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV. INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV. INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV. INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV. INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV INTERACTIVE <span class="kotak">DESIGN</span> WITH ARTDEV. </div>
+            </marquee>
+        </div>
+        <div class="line">
+            <span class="lines"></span>
+        </div>
+    </div>
+    <!--untuk-->
+    <div class="wrapper">
+        <div class="container scrollx">
+            <section class="sec1 pin">
+                <div class="jurusan start">
+                    <div class="isi">
+                        <h1 class="reveal-j"><span class="span">JENIS</span></h1>
+                        <br>
+                        <h1 class="reveal-j"><span class="span">RELATIVE</span></h1>
+                        <br>
+                        <h1 class="reveal-j"><span class="span">PRONOUNCE</span></h1>
+                    </div>
+                </div>
+            </section>
+            <section class="sec2 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">WHO.</span> <br> <span class="non-s">Digunakan untuk menggantikan subjek manusia dalam klausa relatif. </span></h1>
+                        <div class="all">
+                            <div class="bar1" data-tilt><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2">
+                                <div class="biodata" data-tilt  data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1>
+                                        1.The girl who won the competition is my sister.
+                                        <br>
+                                        <br>
+                                        2.I have a friend who speaks multiple languages.
+                                        <br>
+                                        <br>
+                                        3.The person who called you left a message.
+                                      
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec3 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">WHOSE.</span> <br> <span class="non-s">Menunjukkan kepemilikan, dapat digunakan untuk orang atau benda.</span></h1>
+                        <div class="all">
+                            <div class="bar1" data-tilt><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2">
+                                <div class="biodata"data-tilt data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1> 1. The man whose car was stolen reported it to the police.
+                                        <br>
+                                        <br>
+                                        2. The student whose project impressed everyone received an award.
+                                        <br>
+                                        <br>
+                                        3. She has a friend whose house is near the beach.
+                                      </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+            </section>
+            <section class="sec4 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">WHICH.</span> <br> <span class="non-s">Menggantikan subjek atau objek benda dalam klausa relatif.</span></h1>
+                        <div class="all"> 
+                            <div class="bar1" data-tilt><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2">
+                                <div class="biodata" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1>
+                                        1. I found the book which you were looking for.
+                                        <br>
+                                        <br>
+                                        2. The car which he bought last week is already in the garage.
+                                        <br>
+                                        <br>
+                                        3. The movie, which was released last month, received positive 
+                                       
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec5 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">THAT.</span> <br> <span class="non-s">Bisa menggantikan subjek atau objek, baik manusia maupun benda, dalam klausa relatif.</span></h1>
+                        <div class="all">
+                            <div class="bar1" data-tilt><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2" data-tilt>
+                                <div class="biodata" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1>
+                                        1. The cat that is sitting on the windowsill is mine.
+                                        <br>
+                                        <br>
+                                        2. The shirt that she bought is on sale.
+                                        <br>
+                                        <br>
+                                        3. I need a pen that writes smoothly.
+                                      
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec6 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">WHOM.</span> <br> <span class="non-s">Menggantikan objek manusia dalam klausa relatif.</span></h1>
+                        <div class="all">
+                            <div class="bar1" data-tilt><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2" >
+                                <div class="biodata" data-tilt data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1>
+                                        1. The professor whom I admire is giving a lecture.
+                                        <br>
+                                        <br>
+                                        2. The artist whom they interviewed is quite famous.
+                                        <br>
+                                        <br>
+                                        3. He has a cousin whom we met at the party.
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec7 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">WHERE.</span> <br> <span class="non-s">Digunakan untuk menggantikan tempat dalam klausa relatif.</span></h1>
+                        <div class="all">
+                            <div class="bar1"  data-tilt ><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2">
+                                <div class="biodata"data-tilt data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1>
+                                        1. This is the park where we used to play as children.
+                                        <br>
+                                        <br>
+                                        2. The restaurant where we had dinner last night was fantastic.
+                                        <br>
+                                        <br>
+                                        3. I found the street where he lives.
+                                      
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sec8 pin">
+                <div class="jurusan">
+                    <div class="jur">
+                        <h1 ><span class="singkatan">WHEN.</span> <br> <span class="non-s">Menggantikan waktu dalam klausa relatif..</span></h1>
+                        <div class="all">
+                            <div class="bar1" data-tilt><img loading="lazy" class="bar" src="./293961-fantasy_art-Vincent_van_Gogh-The_Starry_Night-classy.jpg" alt=""></div>
+                            <div class="bar2">
+                                <div class="biodata"data-tilt data-tilt-glare data-tilt-max-glare="0.8"> 
+                                    <h1>
+                                        1. The day when we first met is etched in my memory.
+                                        <br>
+                                        <br>
+                                        2. Do you remember the time when we went on that road trip?
+                                        <br>
+                                        <br>
+                                        3. I miss the period when we were all together in college.
+                                      
+                                    </h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+           
+        </div>
+    </div>
+    <!---->
+    <div class="kesimpulan">
+        <div class="bg-bang"></div>
+
+        <h1 class="simle" data-splitting>
+            KESIMPULAN.
+            <br>
+            Relative pronoun seperti who, whose, whom, which, that, where, 
+            dan when memainkan peran penting dalam memperkaya kalimat-kalimat bahasa Inggris. Den
+            gan penggunaan yang tepat, kita dapat mengungkapkan informasi dengan lebih terperinci dan m
+            enyenangkan. Semoga pemahaman tentang penggunaan ini semakin meningkat, membawa kegembiraan da
+            lam menggunakan bahasa Inggris sehari-hari. Teruslah berlatih dan selamat belajar!
+        </h1>
+
+    </div>
+    <div class="ulangi">
+        <div class="textt">
+            <h1>MASIH BINGUNG? <br>
+             <span class="mini">ya ampun..</span>
+             
+            </h1>
+            <a href="#ulangi">klik Disini</a>
+        </div>
+        <div class="cp">2023.TJKT.19.11.37R</div>
+    </div>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/split-type"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./hover-effect.umd.js"></script>
 <script src="./splitting.min.js"></script>
-<script src="./dokum.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="vanilla-tilt.min.js"></script>
+<script src="../jquery.counterup.min.js"></script>
+<script src="/js.js"></script>\
 <script>
+    
+Splitting();
+gsap.registerPlugin(ScrollTrigger);
+//for scroll from lenis
+const lenis = new Lenis()
+  lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+  function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+
+//untuk gsap
+
+//preloader
+    
+jQuery(document).ready(function( $ ) {
+  $('.counter-two').counterUp({
+      delay: 20,
+      time: 2000
+  });
+
+  const preloader = gsap.timeline();
   
- const popup = document.querySelector(".popup");
- const bar = document.querySelectorAll(".bar");
- const close = document.querySelectorAll(".cl")
- const closeBtn = document.getElementById("closeBtn")
+  preloader.to('.counter-two', {
+    delay: 3.3,
+    opacity:0,
+    display: 'none'
+  })
+  preloader.to('.preloader', {
+    delay: '0.5',
+    scaleY:0,
+    transformOrigin:'bottom',
+    display:'none'
+  })
+});
+gsap.to('.gsap', {
+  y: -400,
 
- gsap.to(popup, {
-     opacity: 1 ,
-     display: "flex",
-     duration:1,
-     ease: "power2.out",
- });
-
- closeBtn.addEventListener("click", ()=> {
-    gsap.to(bar, {
-      duration:1,
-      delay: 1,
-      clipPath: "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)",
-      stagger: {amount:0.5}
-    });  
-    gsap.to(close, {
-      duration:1,
-      opacity:0
-    });  
-    gsap.to(popup, {
+  scrollTrigger: {
+  trigger: '.co',
+  start: 'center 40%',
+  end: 'bottom top',
+  scrub: 1,
+  }
+  });
+  gsap.to('.yuta', {
+    rotate: 600,
+  
+    scrollTrigger: {
+    trigger: '.co',
+    start: 'center 40%',
+    end: 'bottom top',
+    scrub:1,
+    }
+    });
+    gsap.from('.text', {
         opacity: 0,
-        display: "none",
-        delay: 2,
-        duration: 1,
-        ease: "power2.in",
-    });  
- });
+        y: 100,
+        stagger:0.1,
+        scrollTrigger: {
+        trigger: '.kelas-desc',
+        start: 'top center',
+        end: 'bottom bottom',
+        scrub: 3,
+        }
+        });
+        gsap.from('.batang-b',3, {
+        ease:'circ.inOut',
+        stagger:0.2,
+        y: 800,
+        scrollTrigger: {
+        trigger: '.kelas-satu',
+        start: '40% 40%',
+        end: '130% center',
+        scrub: 1,
+        }
+      });
+    gsap.from('.smile', {
+      rotate: 760,
+      scrollTrigger: {
+        trigger: '.kelas-desc',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: 5
+        }
+      });
+      gsap.from('.lines', {
+       scaleY:0,
+       transformOrigin:'top',
+      scrollTrigger: {
+        trigger: '.line',
+        start: 'top center',
+        end: 'bottom center',
+        scrub: true
+        }
 
- //unutk fncy
+      });
 
- Fancybox.bind('[data-fancybox="gallery"]', {
-        //
-      });    
+    function setBgColor(color) {
+    gsap.to('.bg-color', {
+    backgroundColor: color,
+  });
+}
+
+    gsap.to('.bg-color', {
+    scrollTrigger: {
+        trigger: '.kelas-desc',
+        start: '0% 60%',
+        end: '90% bottom',
+        toggleActions: 'play none none reverse',
+        onEnter: () => setBgColor('rgb(255, 253, 144)'), 
+        onLeaveBack: () => setBgColor('rgb(82, 249, 127)'),
+    },
+    });
+    gsap.to('.bg-color', {
+    scrollTrigger: {
+        trigger: '.kelas-def',
+        start: '0% 60%',
+        end: '90% bottom',
+        toggleActions: 'play none none reverse',
+        onEnter: () => setBgColor('rgb(164, 255, 255)'), 
+        onLeaveBack: () => setBgColor('rgb(255, 253, 144)'),
+    },
+    });
+
+    
+const splitTypes = document.querySelectorAll('.reveal-type')
+
+splitTypes.forEach((char,i) => {
+  
+  const bg = char.dataset.bgColor
+  const fg = char.dataset.fgColor
+
+  const text = new SplitType(char, { types: 'chars'})
+
+  gsap.fromTo(text.chars, {
+    color: '#ffffff',
+    opacity:0.05,
+    y:-20,
+    scaleY:0,
+    transformOrigin: 'top'
+    },
+    { 
+      opacity:1,
+      y:0,
+      scaleY:1,
+      color: '#000',
+      duration:0.3,
+      stagger:0.02,
+      scrollTrigger:{
+        trigger: char,
+        start:'top 80%',
+        end: 'bottom 50%',
+        scrub:1,
+        toggleActions: 'play play reverse reverse',
+      }
+    })
+})
+
+
+/* untuk ScrollX jurusan*/
+const container = document.querySelector(".container");
+const sections = gsap.utils.toArray(".container section");
+const reveal = document.querySelectorAll(".span");
+
+
+let scrollTween = gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".container",
+    pin: true,
+    scrub: true,
+    end: "+=8000",
+    //snap: 1 / (sections.length - 1),
+  }
+});
+gsap.from(reveal, {
+  y: 100,
+  opacity:0,
+  scrollTrigger: {
+    trigger: ".container",
+    start: "top center",
+    end: "center center",
+    scrub: 1,
+
+  }
+});
+
+//
+
+gsap.from(".simle .char" ,{
+    scrollTrigger:{
+        trigger: '.kesimpulan',
+        start:'top 80%',
+        end: 'bottom center',
+        scrub: true,
+
+    },
+    color:'rgb(255, 255, 255',stagger: 0.03,
+})
+gsap.to(".bing" ,{
+  scrollTrigger:{
+      trigger: '.bing',
+      start:'top 80%',
+      end: 'bottom center',
+      scrub: 3,
+
+  },
+  color:'rgb(255, 255, 255',stagger: 0.03,
+  x:400
+})
+gsap.from(".bg-bang" ,1,{
+  scrollTrigger:{
+      trigger: '.kesimpulan',
+      start:'top center',
+      end: 'bottom center',
+      scrub: false,
+
+  },
+ scaleY:0,
+ transformOrigin: 'top'
+
+ 
+})
 </script>
 </html>
